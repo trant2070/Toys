@@ -17,22 +17,12 @@ public class ToyStore
 
 	public ToyStore()
 	{
-            toyList = new ArrayList<Toy>();
+            
 	}
-        public ToyStore(String toy)
-        {
-            loadToys(t);
-        }
 
 	public void loadToys( String toys )
 	{
-            toyList = new ArrayList<Toy>();
-            ArrayList<String> toy
-                    = new ArrayList <>(Array.asList(toys.split(", ")));
-            for ( int i = 0; i < toy.size(); i += 2)
-            {
-                
-            }
+            toyList.add(new Toy(toys));
 	}
   
   	public Toy getThatToy( String nm )

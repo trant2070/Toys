@@ -14,7 +14,7 @@ public class ToyStoreRunner
 	public static void main( String args[] )
 	{
             ArrayList<ToyStore> toys = new ArrayList<ToyStore>();
-            
+            toys.add(new Toy("sorry"));
             
             
 	}
