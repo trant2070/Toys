@@ -14,12 +14,14 @@ public class Toy
 
 	public Toy()
 	{
-            
+            this.name = "";
+            this.count = 1;
 	}
 
 	public Toy( String nm )
 	{
-            name = nm;
+            this.name = nm;
+            this.count = 2;
 	}
 	
 	public int getCount()
@@ -30,7 +32,7 @@ public class Toy
 	
 	public void setCount( int cnt )
 	{
-            count = cnt;
+            this.count = cnt;
 	}
 	
 	public String getName()
@@ -40,11 +42,15 @@ public class Toy
 	
 	public void setName( String nm )
 	{
-            name = nm;
+            this.name = nm;
 	}
 
 	public String toString()
 	{
 	   return name + " " + count;
 	}
+
+    Object getType() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

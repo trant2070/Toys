@@ -13,8 +13,13 @@ public class ToyStoreRunner
 {
 	public static void main( String args[] )
 	{
-            ArrayList<ToyStore> toys = new ArrayList<ToyStore>();
-            toys.add(new Toy("sorry"));
+//            ArrayList<ToyStore> toys = new ArrayList<ToyStore>();
+            ToyStore list = new ToyStore("sorry, bat, sorry, sorry, sorry, train, train, teddy, teddy, ball, ball");
+           
+            System.out.println("sorry, bat, sorry, sorry, sorry, train, train, teddy, teddy, ball, ball");
+            System.out.println(list);
+            System.out.println("Most Frequent Toy: " + list.getMostFrequentToy());
+   
             
             
 	}
